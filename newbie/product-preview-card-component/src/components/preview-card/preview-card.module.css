@@ -1,0 +1,107 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 28px 20px;
+    border-radius: 10px;
+}
+
+.product-pic {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.content {
+    font-family: Fraunces, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+    p {
+        margin-bottom: 15px;
+
+        &.category {
+            font-size: 0.85em;
+            letter-spacing: 0.4em;
+            font-family: Montserrat, sans-serif;
+            color: var(--dark-greyish-blue);
+        }
+
+        &.product {
+            font-size: 2.2em;
+            line-height: 1em;
+            font-weight: 800;
+        }
+
+        &.description {
+            font-family: Montserrat;
+            color: var(--dark-greyish-blue);
+            line-height: 1.5em;
+        }
+
+        &.price-section {
+            ::before {
+                content: "$"
+            }
+
+            display: inline-flex;
+            align-items: center;
+
+            .price {
+                font-size: 2.3em;
+                color: var(--dark-cyan);
+                margin-right: 20px;
+            }
+
+            .retailprice {
+                font-family: Montserrat;
+                font-size: 0.9em;
+                text-decoration: line-through;
+                color: var(--dark-greyish-blue);
+            }
+        }
+    } 
+
+    .cart {
+        font-family: Montserrat;
+        font-weight: bold;
+        color: white;
+        padding: 15px 0;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 8px;
+        align-items: center;
+        background-color: var(--dark-cyan);
+
+        img {
+            margin: 0 5px
+        }
+    }
+
+}
+
+@media screen and (min-width: 376px) {
+    .content,
+    .product-pic {
+        width: 50%;
+    }
+
+    .product-pic img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .content {
+        border-radius: 0 10px 10px 0;
+    }
+}
