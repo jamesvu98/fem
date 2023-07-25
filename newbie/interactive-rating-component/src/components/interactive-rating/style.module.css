@@ -1,0 +1,112 @@
+.container {
+    background-image: var(--gradient);
+    margin: 0 24px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+button {
+    border: 0;
+}
+
+.heading {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.starsvg {
+    margin-bottom: 20px;
+    background-color: #262E38;
+    height: 40px;
+    border-radius: 20px;
+    width: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 14px;
+    }
+}
+
+.ratingBody {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 20px;
+}
+
+.ratingsBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .option {
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        font-weight: bold;
+        color: hsl(216, 12%, 54%);
+        background-color: #262E38;
+
+        &:hover {
+            background-color: var(--orange);
+            color: white;
+            cursor: pointer
+        }
+
+        &.selected {
+            background-color: var(--light-grey);
+            color: white;
+        }
+
+    }
+} 
+
+.submit {
+    letter-spacing: 1.867px;
+    font-size: 14px;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 22.5px;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:hover {
+        background-color: white;
+        color: var(--orange);
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .container {
+        max-width: 400px
+    }
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        margin-top: 10px;
+    }
+}
+
+.returnMessage {
+    border-radius: 22.5px;
+    margin: 25px 0 30px;
+    background-color: #262E38;
+    color: var(--orange);
+    padding: 8px 13px 6px;
+}
+
+.invisible {
+    display: none
+}
