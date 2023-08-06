@@ -1,0 +1,93 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 900px) {
+       max-width: 900px; 
+    }
+
+    div {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 700px) {
+           max-width: 33%;
+        }
+
+        &:first-child {
+            border-radius: 10px 10px 0 0;
+
+            @media screen and (min-width: 700px) {
+               border-radius: 10px 0 0 10px; 
+            }
+        }
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+
+            @media screen and (min-width: 700px) {
+               border-radius: 0 10px 10px 0; 
+            }
+        }
+    }
+
+    img {
+        width: 60px
+    }
+
+    .sedans {
+        background-color: var(--bright-orange);
+
+        button {
+            color: var(--bright-orange);
+        }
+    }
+    .suvs {
+        background-color: var(--dark-cyan);
+
+        button {
+            color: var(--dark-cyan);
+        }
+    }
+    .luxury {
+        background-color: var(--very-dark-cyan);
+
+        button {
+            color: var(--very-dark-cyan);
+        }
+    }
+
+
+    h1 {
+        font-family: Big Shoulders Display, sans-serif;
+        color: white;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        margin-top: 30px
+    }
+
+    p {
+        font-family: Lexend Deca, sans-serif;
+        color: var(--transparent-white);
+        margin: 25px 0;
+        line-height: 1.7em;
+    }
+
+    button {
+        border-radius: 25px;
+        background-color: white;
+        border: 2px solid transparent;
+        padding: 15px 30px;
+        font-family: Lexend Deca, sans-serif;
+        margin-top: auto;
+        max-width: 80%;
+
+        &:hover {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            cursor: pointer;
+        }
+    }
+}
