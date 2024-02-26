@@ -1,0 +1,88 @@
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 870px;
+    gap: 60px;
+
+    .content {
+        display: flex;
+        padding: 60px 0 30px 40px;
+        width: 100%;
+        flex-direction: column;
+
+        h1 {
+            padding-top: 15px;
+            font-size: 3rem;
+            color: var(--dark-slate-grey)
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        li {
+            list-style-type: none;
+            background-image: url("@/assets/images/icon-list.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            line-height: 35px;
+            padding-left: 38px;
+        }
+
+        label {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input[type=text] {
+            width: 100%;
+            font-size: 16px;
+            padding: 18px 20px;
+            margin: 8px 0 20px;
+            border: 1px solid var(--grey);
+            border-radius: 5px;
+
+            &.error {
+                border: 1px solid var(--tomato);
+                background-color: hsla(4, 100%, 67%, 0.15);
+                color: var(--tomato);
+            }
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 17px;
+            border-radius: 8px;
+            border: 0;
+            background-color: var(--dark-slate-grey);
+            color: var(--white);
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            &:hover {
+                background-color: var(--tomato);
+                box-shadow: 0 5px 17px 5px hsla(4, 100%, 67%, 50%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .background {
+        width: 100%;
+        background-image: url("@/assets/images/illustration-sign-up-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

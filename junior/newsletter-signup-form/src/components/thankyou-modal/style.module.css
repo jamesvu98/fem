@@ -1,0 +1,42 @@
+.container {
+    background-color: var(--white);
+    width: 380px;
+    border-radius: 15px;
+    padding: 30px 40px;
+    color: var(--dark-slate-grey);
+
+    img {
+        padding-bottom: 15px;
+    }
+
+    font-size: 14px;
+
+    h1 {
+        padding-bottom: 15px;
+        line-height: 1em;
+        line-height: 1em;
+        font-size: 37px;
+    }
+
+    p {
+        padding-bottom: 25px;
+        line-height: 1.2rem;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding: 11px 0;
+        font-weight: bold;
+        background: var(--dark-slate-grey);
+        color: white;
+        margin-bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--tomato);
+            box-shadow: 0 5px 17px 5px hsla(4, 100%, 67%, 50%);
+        }
+    }
+}
